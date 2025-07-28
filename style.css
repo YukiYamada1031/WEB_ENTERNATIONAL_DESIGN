@@ -29,3 +29,88 @@ li{
   list-style: none;
 }
 
+.container{
+  text-align: center;
+  margin: 0 auto;
+  width: 1000px;
+}
+
+#header{
+  height: 60px;
+  padding-left: 100px;
+  margin-bottom: 20px;
+}
+
+.flex1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.otoiawase{
+  background-color: #000;
+}
+
+.otoiawase a{
+  color: aliceblue;
+  display: inline-block;
+  padding: 30px 60px;
+}
+
+.otoiawase:hover{
+  opacity: 0.8;
+}
+
+.otoiawase:active{
+  opacity: 0.5;
+}
+
+.flex2{
+  display: flex;
+  align-items: center;
+}
+
+.flex2 img{
+  width: 100px;
+  margin-right: 60px;
+}
+
+.flex3{
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex3 a{
+  margin-right: 30px;
+}
+
+#mainvisual{
+  margin-bottom: 100px;
+}
+
+#mainvisual img{
+  width: 100%;
+  height: calc(100vh - 80px);
+  object-fit: cover;
+}
+
+.flex-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.flex-footer img{
+  width: 100px;
+}
+
+.flex-footer p{
+  text-align: left;
+}
+
+#footer p{
+  text-align: center;
+  margin-bottom: 10px;
+}
