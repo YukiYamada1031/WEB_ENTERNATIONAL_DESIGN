@@ -30,9 +30,8 @@ li{
 }
 
 .container{
-  text-align: center;
   margin: 0 auto;
-  width: 1000px;
+  width: 900px;
 }
 
 #header{
@@ -114,3 +113,108 @@ li{
   text-align: center;
   margin-bottom: 10px;
 }
+
+#news{
+  margin-bottom: 160px;
+}
+
+.section-title{
+  padding-bottom: 30px;
+  margin-bottom: 60px;
+  border-bottom: solid 1px #000;
+  width: 80px;
+}
+
+.section-title .en{
+  font-size: xx-large;
+  font-weight: 300;
+  letter-spacing: 0.5em;
+}
+
+.flex-news{
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-news .content{
+  padding-left: 20px;
+  border-left: solid 1px #000;
+}
+
+.flex-news .content p:first-child{
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.flex-news .content p:last-child{
+  margin-bottom: 10px;
+}
+
+.flex-content{
+  display: flex;
+}
+
+.flex-content p:last-child{
+  color: #f0f0f0;
+  background-color: #000;
+}
+
+#about{
+  margin-bottom: 100px;
+}
+
+.flex-about{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.flex-about img{
+  width: 55%;
+  height: 400px;
+}
+
+.flex-about .content{
+  width: 35%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 200px;
+}
+
+.flex-about .content-text p{
+  line-height: 2;
+}
+
+#business{
+  margin-bottom: 120px;
+}
+
+.flex-business{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bus{
+  width: 45%;
+  margin-right: 5%;
+}
+
+.bus:nth-child(2n){
+  margin-right: 0px;
+}
+
+.bus:first-child,
+.bus:nth-child(3n){
+  margin-top: 140px;
+}
+
+.bus p{
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.bus p::before{
+  content: "-";
+}
+
