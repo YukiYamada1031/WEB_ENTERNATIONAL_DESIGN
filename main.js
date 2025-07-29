@@ -4,6 +4,7 @@ const aboutImage = document.querySelector('#about img');
 const aboutText = document.querySelector('#about .content');
 const businessTitle = document.querySelector('#business .section-title');
 const bus = document.querySelector('.flex-business');
+const companyTitle = document.querySelector('#company .section-title');
 
 
 
@@ -83,3 +84,43 @@ const show4 = (entries) => {
 
 forthObserver = new IntersectionObserver(show4);
 forthObserver.observe(businessTitle);
+forthObserver.observe(companyTitle);
+
+const companyText = document.querySelector('.flex-text');
+const companyImage = document.querySelector('.flex-company img');
+
+const show5 = (entries) => {
+  const key5 = {
+    opacity: [0,1],
+    translate: ['0 100px' , 0],
+  };
+
+  const option5 = {
+    duration: 2000,
+    fill: 'forwards',
+    easing: 'ease',
+  };
+
+  entries[0].target.animate(key5, option5);
+};
+
+const fifthObserver = new IntersectionObserver(show5);
+fifthObserver.observe(companyText);
+
+const show6 = (entries) => {
+  const key6 = {
+    opacity: [0,1],
+    translate: ['100px 0', 0],
+  };
+
+  const option6 = {
+    duration: 2800,
+    fill: 'forwards',
+    easing: 'ease',
+  };
+
+  entries[0].target.animate(key6, option6);
+};
+
+const sixthObserver = new IntersectionObserver(show6);
+sixthObserver.observe(companyImage);

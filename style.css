@@ -218,3 +218,37 @@ li{
   content: "-";
 }
 
+#company{
+  margin-bottom: 160px;
+}
+
+.flex-company{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex-company dl{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-company dl dt{
+  width: 30%;
+  margin-bottom: 15px;
+}
+
+.flex-company dl dd{
+  width: 70%;
+  margin-bottom: 15px;
+}
+
+.flex-text{
+  width: 45%;
+  margin-right: 5%;
+}
+
+.flex-company img{
+  width: 50%;
+  object-fit: cover;
+}
