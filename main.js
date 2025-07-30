@@ -124,3 +124,25 @@ const show6 = (entries) => {
 
 const sixthObserver = new IntersectionObserver(show6);
 sixthObserver.observe(companyImage);
+
+const buses = document.querySelectorAll('.bus');
+
+const shows = (entries) => {
+  const keys = {
+    opacity: [0,1],
+    translate: ['0 100px', 0],
+  };
+
+  const options = {
+    duration: 2400,
+    fill: 'forwards',
+    easing: 'ease',
+  };
+
+  entries[0].target.animate(keys, options);
+};
+
+const observers = new IntersectionObserver(shows);
+observers.observe(buses);
+
+
