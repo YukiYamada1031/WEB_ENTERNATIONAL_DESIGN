@@ -14,10 +14,20 @@ mainvisual.animate(
   },
   {
     duration: 2400,
-    easing: 'ease',
-    fill: 'forwards',
   }
 );
+
+mainvisual.addEventListener('mouseover', () => {
+  mainvisual.animate(
+    {
+      opacity: [1, 0.8]
+    },
+    {
+      easing: 'ease',
+      duration: 1500,
+    }
+  );
+});
 
 const show1 = (entries) => {
   const key1 = {
@@ -91,8 +101,8 @@ const companyImage = document.querySelector('.flex-company img');
 
 const show5 = (entries) => {
   const key5 = {
-    opacity: [0,1],
-    translate: ['0 100px' , 0],
+    opacity: [0, 1],
+    translate: ['0 100px', 0],
   };
 
   const option5 = {
@@ -109,7 +119,7 @@ fifthObserver.observe(companyText);
 
 const show6 = (entries) => {
   const key6 = {
-    opacity: [0,1],
+    opacity: [0, 1],
     translate: ['100px 0', 0],
   };
 
@@ -129,7 +139,7 @@ const buses = document.querySelectorAll('.bus');
 
 const shows = (entries) => {
   const keys = {
-    opacity: [0,1],
+    opacity: [0, 1],
     translate: ['0 100px', 0],
   };
 
